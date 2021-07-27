@@ -89,45 +89,7 @@ offset-path: unset;
 
 <p>The top and bottom halves of the scissors would appear in the top left of the canvas were they not positioned along the starting point of the motion path defined by <code>offset-path</code>.</p>
 
-<pre class="brush: html">&lt;svg xmlns="http://www.w3.org/2000/svg"
-     width="700"
-     height="450"
-     viewBox="350 0 1400 900"&gt;
-  &lt;title&gt;House and Scissors&lt;/title&gt;
-  &lt;rect x="595"
-        y="423"
-        width="610"
-        height="377"
-        fill="blue" /&gt;
-  &lt;polygon points="506,423 900,190 1294,423"
-           fill="yellow" /&gt;
-  &lt;polygon points="993,245 993,190 1086,190 1086,300"
-           fill="red" /&gt;
-  &lt;path id="house" d="M900,190 L993,245 V201 A11,11 0 0,1 1004,190 H1075 A11,11 0 0,1 1086,201 V300 L1294,423 H1216 A11,11 0 0,0 1205,434 V789 A11,11 0 0,1 1194,800 H606 A11,11 0 0,1 595,789 V434 A11,11 0 0,0 584,423 H506 L900,190"
-        fill="none"
-        stroke="black"
-        stroke-width="13"
-        stroke-linejoin="round"
-        stroke-linecap="round" /&gt;
-  &lt;path id="firstScissorHalf" class="scissorHalf"
-        d="M30,0 H-10 A10,10 0 0,0 -20,10 A20,20 0 1,1 -40,-10 H20 A10,10 0 0,1 30,0 M-40,20 A10,10 1 0,0 -40,0 A10,10 1 0,0 -40,20 M0,0"
-        transform="translate(0,0)"
-        fill="green"
-        stroke="black"
-        stroke-width="5"
-        stroke-linejoin="round"
-        stroke-linecap="round"
-        fill-rule="evenodd" /&gt;
-  &lt;path id="secondScissorHalf" class="scissorHalf"
-        d="M30,0 H-10 A10,10 0 0,1 -20,-10 A20,20 0 1,0 -40,10 H20 A10,10 0 0,0 30,0 M-40,-20 A10,10 1 0,0 -40,0 A10,10 1 0,0 -40,-20 M0,0"
-        transform="translate(0,0)"
-        fill="forestgreen"
-        stroke="black"
-        stroke-width="5"
-        stroke-linejoin="round"
-        stroke-linecap="round"
-        fill-rule="evenodd" /&gt;
-&lt;/svg&gt;</pre>
+<pre class="brush: html">&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;350 0 1400 900&quot;&gt;&lt;path fill=&quot;#00f&quot; d=&quot;M595 423h610v377H595z&quot;/&gt;&lt;path fill=&quot;#ff0&quot; d=&quot;M506 423l394-233 394 233z&quot;/&gt;&lt;path fill=&quot;red&quot; d=&quot;M993 245v-55h93v110z&quot;/&gt;&lt;path fill=&quot;none&quot; stroke=&quot;#000&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;13&quot; d=&quot;M900 190l93 55v-44a11 11 0 0111-11h71a11 11 0 0111 11v99l208 123h-78a11 11 0 00-11 11v355a11 11 0 01-11 11H606a11 11 0 01-11-11V434a11 11 0 00-11-11h-78l394-233&quot;/&gt;&lt;path fill=&quot;green&quot; fill-rule=&quot;evenodd&quot; stroke=&quot;#000&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;5&quot; d=&quot;M30 0h-40a10 10 0 00-10 10 20 20 0 11-20-20h60A10 10 0 0130 0m-70 20a10 10 0 000-20 10 10 0 000 20M0 0&quot; class=&quot;scissorHalf&quot;/&gt;&lt;path fill=&quot;#228b22&quot; fill-rule=&quot;evenodd&quot; stroke=&quot;#000&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;5&quot; d=&quot;M30 0h-40a10 10 0 01-10-10 20 20 0 10-20 20h60A10 10 0 0030 0m-70-20a10 10 0 000 20 10 10 0 000-20M0 0&quot; class=&quot;scissorHalf&quot;/&gt;&lt;/svg&gt;</pre>
 
 <h4 id="CSS">CSS</h4>
 
