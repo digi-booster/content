@@ -69,7 +69,7 @@ A common question then is how to make those items line up. This is where you wan
 
 ### The same layout with CSS grids
 
-In this next example, I create the same layout using Grid. This time we have three `1fr` column tracks. We do not need to set anything on the items themselves; they will lay themselves out one into each cell of the created grid. As you can see they stay in a strict grid, lining up in rows and columns. With five items, we get a gap on the end of row two.
+In this next example, I create the same layout using Grid. This time we have three `1fr` column tracks. We do not need to set anything on the items themselves; they will lay themselves out one into each cell of the created grid. As you can see they stay in a strict grid, lining up in rows and columns. With five items, we get a gap at the end of row two.
 
 ```css hidden
 * {box-sizing: border-box;}
@@ -224,7 +224,7 @@ This second example uses a grid to create the same layout. This time we are usin
 
 We have already seen how the `fr` unit works to assign a proportion of available space in the grid container to our grid tracks. The `fr` unit, when combined with the {{cssxref("minmax()", "minmax()")}} function can give us very similar behavior to the `flex` properties in flexbox while still enabling the creation of a layout in two dimensions.
 
-If we look back at the example where I demonstrated the difference between one and two-dimensional layouts, you can see there is a difference between the way of the two layouts work responsively. With the flex layout, if we drag our window wider and smaller, the flexbox does a nice job of adjusting the number of items in each row according to the available space. If we have a lot of space all five items can fit on one row. If we have a very narrow container we may only have space for one.
+If we look back at the example where I demonstrated the difference between one and two-dimensional layouts, you can see there is a difference between the way the two layouts work responsively. With the flex layout, if we drag our window wider and smaller, the flexbox does a nice job of adjusting the number of items in each row according to the available space. If we have a lot of space all five items can fit on one row. If we have a very narrow container we may only have space for one.
 
 In comparison, the grid version always has three column tracks. The tracks themselves will grow and shrink, but there are always three since we asked for three when defining our grid.
 
@@ -378,7 +378,7 @@ If we remove `position:` `absolute` from the rules for `.box3` you can see how i
 
 If the absolutely positioned child has a grid container as a parent but that container does not create a new positioning context, then it is taken out of flow as in the previous example. The positioning context will be whatever element creates a positioning context as is common to other layout methods. In our case, if we remove `position:` `relative` from the wrapper above, positioning context is from the viewport, as shown in this image.
 
-![Image of grid container as parent](2_abspos_example.png)
+![Image of grid container as a parent](2_abspos_example.png)
 
 Once again the item no longer participates in the grid layout in terms of sizing or when other items are auto-placed.
 
