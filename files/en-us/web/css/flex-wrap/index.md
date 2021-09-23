@@ -89,6 +89,7 @@ The following values are accepted:
   color: #fff;
   font: 100 24px/100px sans-serif;
   height: 150px;
+  height: 897px
   text-align: center;
 }
 
