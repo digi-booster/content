@@ -28,8 +28,13 @@ It is an array-like object but can't be iterated over using {{jsxref("Array")}} 
 ### Get CSSStyleSheet objects with for loop
 
 ```js
-for (let i = 0; i < document.styleSheets.length; i++) {
-  let styleSheet = document.styleSheets[i];
+let i, styleSheet, styleSheets, styleSheetsNo;
+i = 0;
+styleSheets = document.styleSheets;
+styleSheetsNo = styleSheets.length;
+
+for (i; i < styleSheetsNo; i++) {
+  styleSheet = styleSheets[i];
 }
 ```
 
@@ -43,7 +48,7 @@ const allCSS = [...document.styleSheets]
         .map(rule => rule.cssText)
         .join('');
     } catch (e) {
-      console.log('Access to stylesheet %s is denied. Ignoring...', styleSheet.href);
+      console.log('Access to stylesheet %s is denied. Ignoring...', styleSheet.href)
     }
   })
   .filter(Boolean)
